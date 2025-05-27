@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+    body{
+        background: linear-gradient(135deg, #ffcb05 0%, #3b4cca 100%);
+        font-family: 'Press Start 2P', cursive;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: #fff;
+        padding: 20px;
+}
+
+#jogo{
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #d32f2f;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 20px #000;
+    margin-bottom: 30px;
+}
+
+#resultado{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0 10px #000;
+}
+
+#resposta{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ff4444;
+}
+
+.linha{
+    display: flex;
+    flex: 1;
+}
+
+.casa{
+    flex: 1;
+    border: 2px solid #555;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.casa:hover {
+    background-color: #ffee58;
+}
+
+.xisEcirculo{
+    font-size: 14px;
+    margin: 5px 0;
+    text-shadow: 1px 1px 2px #000;
+    width: 80%;
+}
+.xis{
+    color: #ff1c1c; /* Vermelho Pokémon */
+}
+
+.bola{
+    color: #1e88e5; /* Azul Pokémon */
+}
+
+.velha{
+    color: #757575; /* Cinza empate */
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #3D94F6;
+    background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+    padding: 15px 30px;
+    border: none;
+    box-shadow: 2px 2px 5px #000;
+    text-shadow: 1px 1px 2px #000;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type=button]:hover {
+    background: #1E62D0;
+    background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+}
